@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:url(/img/gradient.jpg);
+}
+.todo h2{
+    text-align: center;
+}
+.todo{
+    margin: 100px 100px;
+    
+    padding: 20px 40px;
+    border-radius: 10px;
+    /* width: 100%; */
+    background-color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.row input{
+    color: rgb(87, 0, 250);
+    flex: 10;
+    padding:  10px ;
+    border: 2px solid rgb(155, 155, 229);
+    border-radius: 10px;
+}
+.row input::placeholder{
+    text-align: left;
+    color: rgb(109, 209, 184);
+}
+
+.row input:focus{
+    outline:inherit;
+}
+
+#btn{
+    color: rgb(87, 0, 250);
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(155, 155, 229);
+}
+ul{
+    padding-left: 20px;
+}
+ul li{
+    position: relative;
+    color:rgb(155, 155, 229) ;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul li::before{
+    position: absolute;
+    left: -20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    margin-right: 10px;
+    content: "\f111";
+}
+.checked{
+    text-decoration: line-through;
+}
+.checked::before{
+    display:inline-flex;
+    text-decoration: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    margin-right: 10px;
+    font: var(--fa-font-solid);
+    content: "\f111";
+}
+/* ul li::after{
+    text-decoration: none;
+    display:inline-flex;
+    width: 85%;
+    justify-content: right;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    margin-right: 10px;
+    font: var(--fa-font-solid);
+    content: "\58";   
+} */
+ul li span{
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 20px;
+    height: 20px
+}
+
+ul li i:hover{
+    background-color: black;
+}

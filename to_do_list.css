@@ -15,7 +15,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image:url(/img/gradient.jpg);
+    background-image:url(gradient.jpg);
 }
 .todo h2{
     text-align: center;
